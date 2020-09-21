@@ -1,6 +1,5 @@
 package course1
 
-
 /**
  * 10부제
  *
@@ -21,7 +20,7 @@ fun main() {
 	)
 }
 
-private tailrec fun solve(day: Int, cars: List<Int>, acc: Int = 0): Int = when {
+tailrec fun solve(day: Int, cars: List<Int>, acc: Int = 0): Int = when {
 	cars.isEmpty() ->
 		acc
 	else -> {
